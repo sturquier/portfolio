@@ -1,9 +1,9 @@
 import Image from 'next/image'
 
-export default function Home() {
+export default function Projects() {
   return (
     <main>
-        <div>HOME</div>
+        <div>PROJECTS</div>
     </main>
   )
 }

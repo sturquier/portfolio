@@ -1,9 +1,9 @@
 import Image from 'next/image'
 
-export default function Home() {
+export default function Contact() {
   return (
     <main>
-        <div>HOME</div>
+        <div>CONTACT</div>
     </main>
   )
 }
