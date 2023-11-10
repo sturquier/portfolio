@@ -8,7 +8,7 @@ export default function Footer() {
   const linkClassName = "text-gray-900 hover:text-cyan-700 dark:text-white dark:hover:text-cyan-500"
 
   return (
-    <footer className="bg-white border-t border-gray-200 dark:bg-gray-900">
+    <footer className="bg-white border-t border-gray-200 dark:bg-gray-900 mt-8">
       <div className="max-w-screen-xl mx-auto py-6 px-4 flex flex-col items-center justify-center">
         <div className="flex items-center space-x-4 mb-2">
           <Link href={process.env.GITHUB_URL ?? ''} className={linkClassName} target="_blank" rel="noopener noreferrer">
