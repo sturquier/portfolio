@@ -1,12 +1,12 @@
 'use client'
 
+import { MailDataRequired } from '@sendgrid/mail'
 import { useState, FormEvent, ChangeEvent } from 'react'
 
 export default function ContactForm()  {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    subject: '',
     message: '',
   })
 
@@ -22,7 +22,19 @@ export default function ContactForm()  {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>): Promise<void> => {
     e.preventDefault();
 
-    console.log('TODO')
+    const payload: MailDataRequired = {
+      from: formData.email,
+      to: 'simon.turquier96@gmail.com',
+      text: formData.message
+    }
+
+    await fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(payload),
+    })
   }
 
   const labelClassName = "block text-left text-gray-700 text-sm font-bold mb-2"
