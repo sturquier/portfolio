@@ -1,0 +1,42 @@
+{
+  "Navbar": {
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "Home": {
+    "title": "Salut, je suis Simon Turquier 👋",
+    "subtitle": "Full Stack(overflow) Developer situé à Paris"
+  },
+  "About": {
+    "title": "À propos"
+  },
+  "Projects": {
+    "title": "Projets",
+    "descriptions": {
+      "theones": "Application mobile destinée à la vente de produits de luxe",
+      "otello": "Plateforme de mise en relation entre organismes administratifs et hôtels afin de placer des personnes isolées en rupture d'hébergement",
+      "eatsalad": "Plateforme permettant de composer, commander et se faire livrer des salades sur mesure",
+      "exval": "Plateforme de recherche et analyse de transactions immobilières",
+      "tradelock": "Plateforme permettant aux sociétés d'assurer leurs factures",
+      "treasurehunters": "Jeu mobile permettant de partir à la chasse aux trésors en AR via des quêtes et des objets"
+    }
+  },
+  "Contact": {
+    "title": "Me contacter",
+    "subtitle": "N'hésitez pas à remplir le formulaire ci-dessous",
+    "form": {
+      "labels": {
+        "name": "Nom",
+        "email": "Email",
+        "message": "Message"
+      },
+      "submit": "Envoyer un message",
+      "toasts": {
+        "success": "Votre message a bien été envoyé",
+        "error": "Échec de l'envoi du message. Veuillez réessayer plus tard"
+      }
+    }
+  }
+}

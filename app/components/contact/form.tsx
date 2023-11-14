@@ -1,10 +1,13 @@
 'use client'
 
 import { useState, FormEvent, ChangeEvent } from 'react'
+import { useTranslations } from 'next-intl'
 
 import Toast from './toast'
 
 export default function ContactForm()  {
+  const translations = useTranslations('Contact')
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -42,10 +45,10 @@ export default function ContactForm()  {
     })
 
     if (response.ok) {
-      setToast({ message: 'Your message has been sent successfully', type: 'success' })
+      setToast({ message: translations('form.toasts.success'), type: 'success' })
       clearFormData()
     } else {
-      setToast({ message: 'Failed to send message. Please try later', type: 'error' })
+      setToast({ message: translations('form.toasts.error'), type: 'error' })
     }
 
     setIsSubmitting(false)
@@ -65,7 +68,7 @@ export default function ContactForm()  {
       {toast.message && <Toast message={toast.message} type={toast.type} clearToastCallback={clearToast} />}
       <form onSubmit={handleSubmit}>
         <label htmlFor="name" className={labelClassName}>
-          Name <span className={requiredStarClassName}>*</span>
+          {translations('form.labels.name')} <span className={requiredStarClassName}>*</span>
         </label>
         <input
           type="text"
@@ -77,7 +80,7 @@ export default function ContactForm()  {
           required
         />
         <label htmlFor="email" className={labelClassName}>
-          Email <span className={requiredStarClassName}>*</span>
+          {translations('form.labels.email')} <span className={requiredStarClassName}>*</span>
         </label>
         <input
           type="email"
@@ -89,7 +92,7 @@ export default function ContactForm()  {
           required
         />
         <label htmlFor="message" className={labelClassName}>
-          Message <span className={requiredStarClassName}>*</span>
+          {translations('form.labels.message')} <span className={requiredStarClassName}>*</span>
         </label>
         <textarea
           id="message"
@@ -106,7 +109,7 @@ export default function ContactForm()  {
           disabled={!isFormValid || isSubmitting}
           className="bg-cyan-700 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline disabled:opacity-30"
         >
-          Send Message
+          {translations('form.submit')}
         </button>
       </form>
     </>

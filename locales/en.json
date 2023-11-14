@@ -1,0 +1,42 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "Home": {
+    "title": "Hey, I'm Simon Turquier 👋",
+    "subtitle": "Full Stack(overflow) Developer based in Paris"
+  },
+  "About": {
+    "title": "About"
+  },
+  "Projects": {
+    "title": "Projects",
+    "descriptions": {
+      "theones": "Mobile application for the sale of luxury products",
+      "otello": "Platform that puts administrative bodies and hotels in touch with each other in order to place single people who have run out of accommodation.",
+      "eatsalad": "Platform for composing, ordering and delivering customised salads",
+      "exval": "Real estate transaction research and analysis platform",
+      "tradelock": "Platform that allows companies to insure their invoices",
+      "treasurehunters": "Mobile game that lets you search for treasure in AR through quests and objects."
+    }
+  },
+  "Contact": {
+    "title": "Contact me",
+    "subtitle": "Feel free to fill out the form below",
+    "form": {
+      "labels": {
+        "name": "Name",
+        "email": "Email",
+        "message": "Message"
+      },
+      "submit": "Send message",
+      "toasts": {
+        "success": "Your message has been sent successfully",
+        "error": "Failed to send message. Please try later"
+      }
+    }
+  }
+}
