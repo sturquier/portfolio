@@ -7,7 +7,9 @@
   },
   "Home": {
     "title": "Hey, I'm Simon Turquier 👋",
-    "subtitle": "Full Stack(overflow) Developer based in Paris"
+    "subtitle": "Full Stack",
+    "subtitle2": "Overflow",
+    "subtitle3": "Developer based in Paris"
   },
   "About": {
     "title": "About"
