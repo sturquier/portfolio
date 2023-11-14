@@ -38,18 +38,18 @@ export default function Navbar() {
   const isActive = (path: string): boolean => path === pathname
 
   const getLinkClassName = (path: string): string => {
-    const baseClasses = "block py-2 pl-3 pr-4 rounded md:p-0"
+    const baseClasses = "block py-2 pl-3 pr-4 rounded md:p-0 relative overflow-hidden nav-link"
 
     const activeClasses = isActive(path)
       ? "text-white bg-cyan-700 md:bg-transparent md:text-cyan-700"
-      : "text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-cyan-700"
+      : "text-gray-900 hover:bg-gray-100 md:hover:bg-transparent"
 
     const inactiveClasses = "dark:text-white md:dark:hover:text-cyan-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
 
     return `${baseClasses} ${activeClasses} ${inactiveClasses}`
   }
 
-  const getFlagClassName = (): string => 'inline-flex items-center px-3 md:px-1'
+  const getFlagClassName = (): string => 'inline-flex items-center px-3 md:px-1 transform transition duration-300 hover:scale-110'
 
   const getLocalizedPath = (targetLocale: string): string => {
     if (targetLocale === 'fr' && pathname.startsWith('/fr')) {
@@ -83,7 +83,7 @@ export default function Navbar() {
   return (
     <nav className="bg-white border-gray-200 dark:bg-gray-900 mb-8">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <Link href={getLinkHref('/')} className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">ST</Link>
+        <Link href={getLinkHref('/')} className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white transform transition duration-300 hover:scale-125">ST</Link>
         <button
           onClick={toggleMenu}
           type="button"
