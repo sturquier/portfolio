@@ -10,37 +10,37 @@ export default function Projects() {
     {
       title: 'The Ones',
       description: translations('descriptions.theones'),
-      image: '/assets/images/the-ones.png',
+      image: '/assets/images/projects/the-ones.png',
       padding: 'py-4',
     },
     {
       title: 'Otello',
       description: translations('descriptions.otello'),
-      image: '/assets/images/otello.png',
+      image: '/assets/images/projects/otello.png',
       padding: 'px-4',
     },
     {
       title: 'Eat Salad',
       description: translations('descriptions.eatsalad'),
-      image: '/assets/images/eat-salad.png',
+      image: '/assets/images/projects/eat-salad.png',
       padding: 'px-4',
     },
     {
       title: 'Exval',
       description: translations('descriptions.exval'),
-      image: '/assets/images/exval.png',
+      image: '/assets/images/projects/exval.png',
       padding: 'px-4',
     },
     {
       title: 'Tradelock',
       description: translations('descriptions.tradelock'),
-      image: '/assets/images/tradelock.png',
+      image: '/assets/images/projects/tradelock.png',
       padding: 'px-4',
     },
     {
       title: 'Treasure Hunters',
       description: translations('descriptions.treasurehunters'),
-      image: '/assets/images/treasure-hunters.png',
+      image: '/assets/images/projects/treasure-hunters.png',
       padding: 'py-4',
     },
   ]

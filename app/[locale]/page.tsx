@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 
 export default function Home() {
@@ -7,10 +8,17 @@ export default function Home() {
 
   return (
     <main className="flex flex-col items-center justify-center h-screen text-center px-4">
-      <h1 className="text-4xl font-bold mb-2">
+      <p className="text-2xl mb-8">
         {`${translations('title')} `}
         <span className='emoji-shake'>👋</span>
-      </h1>
+        {` ${translations('title2')}`}
+      </p>
+      <div className="avatar-wrapper">
+        <div className="avatar-container">
+          <Image src="/assets/images/avatar.png" alt="Avatar" width={128} height={128} />
+        </div>
+      </div>
+      <h1 className="text-4xl font-bold my-4">{translations('title3')}</h1>
       <p className="text-xl">
         {translations('subtitle')}
         <span className="line-through">{translations('subtitle2')}</span>
