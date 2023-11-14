@@ -6,9 +6,10 @@ import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
-import menuIcon from '../../../public/assets/icons/menu.svg'
-import frIcon from '../../../public/assets/icons/flags/fr.svg'
-import gbIcon from '../../../public/assets/icons/flags/gb.svg'
+import menuIcon from '../../../../public/assets/icons/menu.svg'
+import frIcon from '../../../../public/assets/icons/flags/fr.svg'
+import gbIcon from '../../../../public/assets/icons/flags/gb.svg'
+import './navbar.css'
 
 export default function Navbar() {
   const translations = useTranslations('Navbar')

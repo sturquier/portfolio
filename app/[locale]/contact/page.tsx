@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl'
 
-import ContactForm from "../../components/contact/form" 
+import ContactForm from '../../components/contact/form'
 
 export default function Contact() {
   const translations = useTranslations('Contact')

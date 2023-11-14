@@ -4,9 +4,10 @@ import { Montserrat } from 'next/font/google'
 import { NextIntlClientProvider } from 'next-intl'
 import { notFound } from 'next/navigation'
 
-import Navbar from "../components/common/navbar"
-import Footer from "../components/common/footer"
-import './globals.css'
+import Navbar from '../components/common/navbar/navbar'
+import Footer from '../components/common/footer/footer'
+import '../globals.css'
+import './page.css'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 

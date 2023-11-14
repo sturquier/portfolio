@@ -1,0 +1,10 @@
+.footer-icon {
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: var(--icon-color, #000000);
+  transition: background-color 0.3s;
+}
+
+.footer-link:hover .footer-icon {
+  background-color: var(--icon-hover-color, rgb(14 116 144));
+}
