@@ -11,7 +11,7 @@
     "title3": "Simon Turquier",
     "subtitle": "Full Stack",
     "subtitle2": "Overflow",
-    "subtitle3": "Developer situé à Paris"
+    "subtitle3": "développeur situé à Paris"
   },
   "About": {
     "title": "À propos"
@@ -20,10 +20,11 @@
     "title": "Projets",
     "descriptions": {
       "theones": "Application mobile destinée à la vente de produits de luxe",
+      "luckysit": "Application mobile permettant de jouer à divers jeux interactifs pendant les temps d'attente dans les stades lors d'évènements",
       "otello": "Plateforme de mise en relation entre organismes administratifs et hôtels afin de placer des personnes isolées en rupture d'hébergement",
       "eatsalad": "Plateforme permettant de composer, commander et se faire livrer des salades sur mesure",
-      "exval": "Plateforme de recherche et analyse de transactions immobilières",
       "tradelock": "Plateforme permettant aux sociétés d'assurer leurs factures",
+      "exval": "Plateforme de recherche et analyse de transactions immobilières",
       "treasurehunters": "Jeu mobile permettant de partir à la chasse aux trésors en AR via des quêtes et des objets"
     }
   },

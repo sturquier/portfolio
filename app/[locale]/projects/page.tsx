@@ -14,6 +14,12 @@ export default function Projects() {
       padding: 'py-4',
     },
     {
+      title: 'Luckysit',
+      description: translations('descriptions.luckysit'),
+      image: '/assets/images/projects/luckysit.png',
+      padding: 'py-4',
+    },
+    {
       title: 'Otello',
       description: translations('descriptions.otello'),
       image: '/assets/images/projects/otello.png',
@@ -26,15 +32,15 @@ export default function Projects() {
       padding: 'px-4',
     },
     {
-      title: 'Exval',
-      description: translations('descriptions.exval'),
-      image: '/assets/images/projects/exval.png',
-      padding: 'px-4',
-    },
-    {
       title: 'Tradelock',
       description: translations('descriptions.tradelock'),
       image: '/assets/images/projects/tradelock.png',
+      padding: 'px-4',
+    },
+    {
+      title: 'Exval',
+      description: translations('descriptions.exval'),
+      image: '/assets/images/projects/exval.png',
       padding: 'px-4',
     },
     {

@@ -19,7 +19,7 @@ export default function Home() {
         </div>
       </div>
       <h1 className="text-4xl font-bold my-4">{translations('title3')}</h1>
-      <p className="text-xl">
+      <p className="text-xl text-slate-700 font-medium">
         {translations('subtitle')}
         <span className="line-through">{translations('subtitle2')}</span>
         {` ${translations('subtitle3')}`}
