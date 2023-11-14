@@ -51,10 +51,39 @@ export default function Navbar() {
 
   const getFlagClassName = (): string => 'inline-flex items-center px-3 md:px-1'
 
+  const getLocalizedPath = (targetLocale: string): string => {
+    if (targetLocale === 'fr' && pathname.startsWith('/fr')) {
+      return '#'
+    }
+  
+    if (targetLocale === 'en' && !pathname.startsWith('/fr')) {
+      return '#'
+    }
+  
+    if (targetLocale === 'fr') {
+      return `/fr${pathname}`
+    }
+  
+    if (targetLocale === 'en') {
+      return pathname.replace(/^\/fr/, '/en')
+    }
+  
+    return pathname
+  }
+  
+  const getLinkHref = (path: string): string => {
+    if (pathname.startsWith('/fr')) {
+      return `/fr${path}`
+    }
+
+    return `/en${path}`
+  }
+  
+
   return (
     <nav className="bg-white border-gray-200 dark:bg-gray-900 mb-8">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <Link href="/" className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">ST</Link>
+        <Link href={getLinkHref('/')} className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">ST</Link>
         <button
           onClick={toggleMenu}
           type="button"
@@ -68,24 +97,24 @@ export default function Navbar() {
         <div className={`${isMenuOpen ? 'block' : 'hidden'} w-full md:block md:w-auto`} id="navbar-menu">
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
-              <Link href="/" className={getLinkClassName('/')}>{translations('home')}</Link>
+              <Link href={getLinkHref('/')} className={getLinkClassName('/')}>{translations('home')}</Link>
             </li>
             <li>
-              <Link href="/about" className={getLinkClassName('/about')}>{translations('about')}</Link>
+              <Link href={getLinkHref('/about')} className={getLinkClassName('/about')}>{translations('about')}</Link>
             </li>
             <li>
-              <Link href="/projects" className={getLinkClassName('/projects')}>{translations('projects')}</Link>
+              <Link href={getLinkHref('/projects')} className={getLinkClassName('/projects')}>{translations('projects')}</Link>
             </li>
             <li>
-              <Link href="/contact" className={getLinkClassName('/contact')}>{translations('contact')}</Link>
+              <Link href={getLinkHref('/contact')} className={getLinkClassName('/contact')}>{translations('contact')}</Link>
             </li>
             <li>
-              <Link href="/fr" locale="fr" className={getFlagClassName()}>
+              <Link href={getLocalizedPath('fr')} locale="fr" className={getFlagClassName()}>
                 <Image src={frIcon} alt="Switch to FR" width={24} height={24} />
               </Link>
             </li>
             <li>
-              <Link href="/en" locale="en" className={getFlagClassName()}>
+              <Link href={getLocalizedPath('en')} locale="en" className={getFlagClassName()}>
                 <Image src={gbIcon} alt="Switch to EN" width={24} height={24} />
               </Link>
             </li>
