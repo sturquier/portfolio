@@ -9,7 +9,7 @@ import { usePathname } from 'next/navigation'
 import menuIcon from '../../../../public/assets/icons/menu.svg'
 import frIcon from '../../../../public/assets/icons/flags/fr.svg'
 import gbIcon from '../../../../public/assets/icons/flags/gb.svg'
-import './navbar.css'
+import './navbar.scss'
 
 export default function Navbar() {
   const translations = useTranslations('Navbar')

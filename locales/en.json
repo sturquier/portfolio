@@ -14,10 +14,16 @@
     "subtitle3": "developer based in Paris"
   },
   "About": {
-    "title": "About"
+    "title": "About",
+    "roles": {
+      "lead": "Lead web developer",
+      "fullstack": "Full stack developer",
+      "training": "Web developer ( work-linked training )"
+    }
   },
   "Projects": {
     "title": "Projects",
+    "subtitle": "List of projects I have contributed to",
     "descriptions": {
       "theones": "Mobile application for the sale of luxury products",
       "luckysit": "Mobile application that allows users to play a variety of interactive games while waiting in stadiums during events",
@@ -30,7 +36,8 @@
   },
   "Contact": {
     "title": "Contact me",
-    "subtitle": "Feel free to fill out the form below",
+    "subtitle": "If you would like to know more about me or my work,",
+    "subtitle2": "please leave a message",
     "form": {
       "labels": {
         "name": "Name",

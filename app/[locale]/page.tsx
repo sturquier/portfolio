@@ -8,17 +8,17 @@ export default function Home() {
 
   return (
     <main className="flex flex-col items-center justify-center h-screen text-center px-4">
-      <p className="text-2xl mb-8">
+      <p className="text-2xl mb-16">
         {`${translations('title')} `}
         <span className='emoji-shake'>👋</span>
         {` ${translations('title2')}`}
       </p>
       <div className="avatar-wrapper">
         <div className="avatar-container">
-          <Image src="/assets/images/avatar.png" alt="Avatar" width={128} height={128} />
+          <Image src="/assets/images/avatar.png" alt="Avatar" width={160} height={160} />
         </div>
       </div>
-      <h1 className="text-4xl font-bold my-4">{translations('title3')}</h1>
+      <h1 className="text-4xl font-bold mt-16 mb-4">{translations('title3')}</h1>
       <p className="text-xl text-slate-700 font-medium">
         {translations('subtitle')}
         <span className="line-through">{translations('subtitle2')}</span>

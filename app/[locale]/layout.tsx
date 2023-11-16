@@ -6,8 +6,8 @@ import { notFound } from 'next/navigation'
 
 import Navbar from '../components/common/navbar/navbar'
 import Footer from '../components/common/footer/footer'
-import '../globals.css'
-import './page.css'
+import '../globals.scss'
+import './page.scss'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 

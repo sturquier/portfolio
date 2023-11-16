@@ -7,17 +7,23 @@
   },
   "Home": {
     "title": "Salut",
-    "title2": "Je suis",
+    "title2": "je suis",
     "title3": "Simon Turquier",
     "subtitle": "Full Stack",
     "subtitle2": "Overflow",
     "subtitle3": "développeur situé à Paris"
   },
   "About": {
-    "title": "À propos"
+    "title": "À propos",
+    "roles": {
+      "lead": "Développeur web ( lead )",
+      "fullstack": "Développeur web full stack",
+      "training": "Développeur web ( en alternance )"
+    }
   },
   "Projects": {
     "title": "Projets",
+    "subtitle": "Liste des projets auxquels j'ai contribué",
     "descriptions": {
       "theones": "Application mobile destinée à la vente de produits de luxe",
       "luckysit": "Application mobile permettant de jouer à divers jeux interactifs pendant les temps d'attente dans les stades lors d'évènements",
@@ -30,7 +36,8 @@
   },
   "Contact": {
     "title": "Me contacter",
-    "subtitle": "N'hésitez pas à remplir le formulaire ci-dessous",
+    "subtitle": "Si vous souhaitez en savoir plus sur moi ou sur mon travail,",
+    "subtitle2": "n'hésitez pas à laisser un message",
     "form": {
       "labels": {
         "name": "Nom",

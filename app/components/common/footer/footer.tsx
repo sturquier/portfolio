@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 import githubIcon from '../../../../public/assets/icons/github.svg'
 import linkedinIcon from '../../../../public/assets/icons/linkedin.svg'
-import './footer.css'
+import './footer.scss'
 
 export default function Footer() {
   const linkClassName = "footer-link transform transition duration-300 hover:scale-110"
