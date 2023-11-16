@@ -13,10 +13,8 @@ export default function Home() {
         <span className='emoji-shake'>👋</span>
         {` ${translations('title2')}`}
       </p>
-      <div className="avatar-wrapper">
-        <div className="avatar-container">
-          <Image src="/assets/images/avatar.png" alt="Avatar" width={160} height={160} />
-        </div>
+      <div className="picture-container">
+        <Image src="/assets/images/picture.png" alt="Picture" width={160} height={160} />
       </div>
       <h1 className="text-4xl font-bold mt-16 mb-4">{translations('title3')}</h1>
       <p className="text-xl text-slate-700 font-medium">
