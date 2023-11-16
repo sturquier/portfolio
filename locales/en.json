@@ -19,6 +19,26 @@
       "lead": "Lead web developer",
       "fullstack": "Full stack developer",
       "training": "Web developer ( work-linked training )"
+    },
+    "companies": {
+      "tkt": {
+        "description": "Web agency",
+        "jobs": {
+          "supervision": "Team supervision and assurance of technical quality of deliverables",
+          "estimation": "Estimate time and cost",
+          "training": "Delivering in-house training and working as a trainer in schools",
+          "tutor": "Tutor for work-linked students",
+          "development": "Back, front and mobile development"
+        }
+      },
+      "apdc": {
+        "description": "Ordering platform and home delivery",
+        "jobs": {
+          "website": "Showcase site development",
+          "bo": "Back-Office development",
+          "application": "Application development"
+        }
+      }
     }
   },
   "Projects": {

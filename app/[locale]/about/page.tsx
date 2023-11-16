@@ -27,10 +27,27 @@ export default function About() {
       year: '2022 - 2023',
       company: {
         title: 'TKT Thinking Technology',
-        description: 'Agence web'
+        description: translations('companies.tkt.description')
       },
       role: translations('roles.lead'),
-      jobs: []
+      jobs: [
+        {
+          description: translations('companies.tkt.jobs.supervision')
+        },
+        {
+          description: translations('companies.tkt.jobs.estimation')
+        },
+        {
+          description: translations('companies.tkt.jobs.training')
+        },
+        {
+          description: translations('companies.tkt.jobs.tutor')
+        },
+        {
+          description: translations('companies.tkt.jobs.development'),
+          technology: "Symfony 6, React.JS, Flutter"
+        },
+      ]
     },
     {
       year: '2019 - 2022',
@@ -38,7 +55,12 @@ export default function About() {
         title: 'TKT Thinking Technology'
       },
       role: translations('roles.fullstack'),
-      jobs: []
+      jobs: [
+        {
+          description: translations('companies.tkt.jobs.development'),
+          technology: 'Symfony 4,5,6, React.JS, Nest.JS'
+        }
+      ]
     },
     {
       year: '2018 - 2019',
@@ -46,26 +68,31 @@ export default function About() {
         title: 'TKT Thinking Technology'
       },
       role: translations('roles.training'),
-      jobs: []
+      jobs: [
+        {
+          description: translations('companies.tkt.jobs.development'),
+          technology: 'Symfony 4, React.JS, React Native'
+        }
+      ]
     },
     {
       year: '2016 - 2018',
       company: {
         title: 'Au Pas de Courses',
-        description: 'Plateforme de commande et livraison à domicile'
+        description: translations('companies.apdc.description')
       },
       role: translations('roles.training'),
       jobs: [
         {
-          description: 'Développement du site vitrine',
+          description: translations('companies.apdc.jobs.website'),
           technology: 'Magento 1'
         },
         {
-          description: 'Développement du Back-Office',
+          description: translations('companies.apdc.jobs.bo'),
           technology: 'Symfony 3'
         },
         {
-          description: "Développement de l'application",
+          description: translations('companies.apdc.jobs.application'),
           technology: 'React.JS'
         }
       ]
@@ -73,25 +100,28 @@ export default function About() {
   ]
 
   return (
-    <main className="flex flex-col items-center justify-center h-screen text-center px-4">
+    <main className="flex flex-col items-center justify-center text-center px-4">
       <h1 className="text-4xl font-bold mb-12">{translations('title')}</h1>
       <div className="flex flex-col items-start relative">
-        <div className="absolute left-28 top-0 bottom-0 w-0.5 bg-gray-300"></div>
+        <div className="absolute left-28 top-0 bottom-0 w-0.5 bg-cyan-700"></div>
         {experiences.map((experience: IExperience, index: number) => (
           <div key={index} className="flex items-start mb-10">
-            <div className="w-24 mr-4 text-gray-500 text-right">{experience.year}</div>
+            <div className="w-24 mr-4 text-cyan-700 text-right">{experience.year}</div>
             <div className="relative flex items-center">
-              <div className="absolute -left-3 top-1/2 -translate-y-[calc(50%-26px)] bg-white border-2 border-gray-300 rounded-full w-6 h-6"></div>
+              <div className="absolute -left-3 top-1/2 -translate-y-[calc(50%-26px)] bg-white border-2 border-cyan-700 rounded-full w-6 h-6"></div>
             </div>
             <div className="pl-8 text-left">
-              <h3 className="text-xl font-semibold">{experience.role}</h3>
-              <p className='mb-6'>
+              <h3 className="text-2xl font-semibold">{experience.role}</h3>
+              <p className='mb-6 text-xl'>
                 {experience.company.title}
-                {experience.company.description && <span className='text-gray-500'>{` ( ${experience.company.description} ) `}</span>}
+                {experience.company.description && ' - '}
+                {experience.company.description && (
+                  <span className='text-sm'>{experience.company.description}</span>
+                )}
               </p>
               <ul>
                 {experience.jobs.map((job: IJob, index: number) => (
-                  <li key={index} className='mb-2'>
+                  <li key={index} className='mb-2 list-disc'>
                     {job.description}
                     {job.technology && <span className='block text-sm text-gray-500'>{job.technology}</span>}
                   </li>

@@ -19,6 +19,26 @@
       "lead": "Développeur web ( lead )",
       "fullstack": "Développeur web full stack",
       "training": "Développeur web ( en alternance )"
+    },
+    "companies": {
+      "tkt": {
+        "description": "Agence web",
+        "jobs": {
+          "supervision": "Supervision d'équipe et garantie de la qualité technique des livrables",
+          "estimation": "Estimation du temps et des coûts",
+          "training": "Conduite de formations internes et interventions en tant que formateur dans des écoles",
+          "tutor": "Tuteur d'alternant",
+          "development": "Développement back, front et mobile"
+        }
+      },
+      "apdc": {
+        "description": "Plateforme de commande et livraison à domicile",
+        "jobs": {
+          "website": "Développement du site vitrine",
+          "bo": "Développement du Back-Office",
+          "application": "Développement de l'application"
+        }
+      }
     }
   },
   "Projects": {
