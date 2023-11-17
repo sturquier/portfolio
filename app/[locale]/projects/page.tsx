@@ -62,7 +62,7 @@ export default function Projects() {
     <main className="flex flex-col items-center justify-center text-center px-4">
       <h1 className="text-4xl font-bold mb-4">{translations('title')}</h1>
       <p className="mb-12 text-lg text-center text-gray-600">{translations('subtitle')}</p>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {projects.map((project: IProject, index: number) => (
           <div key={index} className="group relative w-96 h-64 md:w-128 md:h-96 overflow-hidden bg-gray-100">
             <div className="inset-0 flex items-center justify-center">

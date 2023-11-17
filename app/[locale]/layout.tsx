@@ -1,6 +1,7 @@
 import { ReactNode } from 'react'
 import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
+import Head from 'next/head'
 import { NextIntlClientProvider } from 'next-intl'
 import { notFound } from 'next/navigation'
 
@@ -43,6 +44,10 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
+      <Head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
       <body className={montserrat.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Navbar />
