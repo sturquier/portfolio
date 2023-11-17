@@ -26,7 +26,8 @@
         "jobs": {
           "supervision": "Team supervision and assurance of technical quality of deliverables",
           "estimation": "Estimate time and cost",
-          "training": "Delivering in-house training and working as a trainer in schools",
+          "trainer": "Delivering in-house training",
+          "trainerMore": "Delivering in-house training and working as a trainer in schools",
           "tutor": "Tutor for work-linked students",
           "development": "Back, front and mobile development"
         }
@@ -49,8 +50,10 @@
       "luckysit": "Mobile application that allows users to play a variety of interactive games while waiting in stadiums during events",
       "otello": "Platform that puts administrative bodies and hotels in touch with each other in order to place single people who have run out of accommodation.",
       "eatsalad": "Platform for composing, ordering and delivering customised salads",
-      "tradelock": "Platform that allows companies to insure their invoices",
+      "chronicoach": "Mobile application that provides nutritional support for people with chronic diseases",
       "exval": "Real estate transaction research and analysis platform",
+      "tradelock": "Platform that allows companies to insure their invoices",
+      "hardwareclub": "Community platform to find funding and partnerships",
       "treasurehunters": "Mobile game that lets you search for treasure in AR through quests and objects."
     }
   },

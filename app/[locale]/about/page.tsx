@@ -32,20 +32,20 @@ export default function About() {
       role: translations('roles.lead'),
       jobs: [
         {
+          description: translations('companies.tkt.jobs.development'),
+          technology: "Symfony 6, React.JS, Flutter"
+        },
+        {
           description: translations('companies.tkt.jobs.supervision')
         },
         {
           description: translations('companies.tkt.jobs.estimation')
         },
         {
-          description: translations('companies.tkt.jobs.training')
+          description: translations('companies.tkt.jobs.trainerMore')
         },
         {
           description: translations('companies.tkt.jobs.tutor')
-        },
-        {
-          description: translations('companies.tkt.jobs.development'),
-          technology: "Symfony 6, React.JS, Flutter"
         },
       ]
     },
@@ -59,7 +59,10 @@ export default function About() {
         {
           description: translations('companies.tkt.jobs.development'),
           technology: 'Symfony 4,5,6, React.JS, Nest.JS'
-        }
+        },
+        {
+          description: translations('companies.tkt.jobs.trainer')
+        },
       ]
     },
     {

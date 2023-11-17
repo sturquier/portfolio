@@ -39,15 +39,27 @@ export default function Projects() {
       padding: 'px-4',
     },
     {
+      title: 'Chronicoach',
+      description: translations('descriptions.chronicoach'),
+      image: '/assets/images/projects/chronicoach.png',
+      padding: 'py-4',
+    },
+    {
+      title: 'Exval',
+      description: translations('descriptions.exval'),
+      image: '/assets/images/projects/exval.png',
+      padding: 'px-4',
+    },
+    {
       title: 'Tradelock',
       description: translations('descriptions.tradelock'),
       image: '/assets/images/projects/tradelock.png',
       padding: 'px-4',
     },
     {
-      title: 'Exval',
-      description: translations('descriptions.exval'),
-      image: '/assets/images/projects/exval.png',
+      title: 'Hardware Club',
+      description: translations('descriptions.hardwareclub'),
+      image: '/assets/images/projects/hardware-club.png',
       padding: 'px-4',
     },
     {

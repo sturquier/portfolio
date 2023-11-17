@@ -26,7 +26,8 @@
         "jobs": {
           "supervision": "Supervision d'équipe et garantie de la qualité technique des livrables",
           "estimation": "Estimation du temps et des coûts",
-          "training": "Conduite de formations internes et interventions en tant que formateur dans des écoles",
+          "trainer": "Conduite de formations internes",
+          "trainerMore": "Conduite de formations internes et interventions en tant que formateur dans des écoles",
           "tutor": "Tuteur d'alternant",
           "development": "Développement back, front et mobile"
         }
@@ -49,8 +50,10 @@
       "luckysit": "Application mobile permettant de jouer à divers jeux interactifs pendant les temps d'attente dans les stades lors d'évènements",
       "otello": "Plateforme de mise en relation entre organismes administratifs et hôtels afin de placer des personnes isolées en rupture d'hébergement",
       "eatsalad": "Plateforme permettant de composer, commander et se faire livrer des salades sur mesure",
-      "tradelock": "Plateforme permettant aux sociétés d'assurer leurs factures",
+      "chronicoach": "Application mobile destinée à l'accompagnement nutritionnel des personnes souffrants de maladies chroniques",
       "exval": "Plateforme de recherche et analyse de transactions immobilières",
+      "tradelock": "Plateforme permettant aux sociétés d'assurer leurs factures",
+      "hardwareclub": "Plateforme communautaire permettant de trouver des fonds et des partenariats",
       "treasurehunters": "Jeu mobile permettant de partir à la chasse aux trésors en AR via des quêtes et des objets"
     }
   },
