@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 
 interface IExperience {
@@ -60,9 +61,6 @@ export default function About() {
           description: translations('companies.tkt.jobs.development'),
           technology: 'Symfony 4,5,6, React.JS, Nest.JS'
         },
-        {
-          description: translations('companies.tkt.jobs.trainer')
-        },
       ]
     },
     {
@@ -105,6 +103,17 @@ export default function About() {
   return (
     <main className="flex flex-col items-center justify-center text-center px-4">
       <h1 className="text-4xl font-bold mb-12">{translations('title')}</h1>
+      <a href="/assets/documents/cv.pdf" download className="flex items-center justify-center self-end mb-4 mr-20 bg-cyan-700 text-white font-bold py-2 px-4 rounded hover:bg-cyan-800 transition duration-300">
+        {translations('cv')}
+        <span className="ml-2 flex items-center justify-center">
+          <Image
+            src="/assets/icons/download.svg"
+            alt="Download"
+            width={24}
+            height={24}
+          />
+        </span>
+      </a>
       <div className="flex flex-col items-start relative">
         <div className="absolute left-28 top-0 bottom-0 w-0.5 bg-cyan-700"></div>
         {experiences.map((experience: IExperience, index: number) => (

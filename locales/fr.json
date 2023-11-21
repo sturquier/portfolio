@@ -15,6 +15,7 @@
   },
   "About": {
     "title": "À propos",
+    "cv": "CV",
     "roles": {
       "lead": "Développeur web ( lead )",
       "fullstack": "Développeur web full stack",
@@ -27,8 +28,8 @@
           "supervision": "Supervision d'équipe et garantie de la qualité technique des livrables",
           "estimation": "Estimation du temps et des coûts",
           "trainer": "Conduite de formations internes",
-          "trainerMore": "Conduite de formations internes et interventions en tant que formateur dans des écoles",
-          "tutor": "Tuteur d'alternant",
+          "trainerMore": "Conduite de formations internes et intervention en tant que formateur dans une école",
+          "tutor": "Recrutements, jobs dating. Tuteur d'un alternant",
           "development": "Développement back, front et mobile"
         }
       },

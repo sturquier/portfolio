@@ -6,9 +6,6 @@ import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
-import menuIcon from '../../../../public/assets/icons/menu.svg'
-import frIcon from '../../../../public/assets/icons/flags/fr.svg'
-import gbIcon from '../../../../public/assets/icons/flags/gb.svg'
 import './navbar.scss'
 
 export default function Navbar() {
@@ -93,7 +90,7 @@ export default function Navbar() {
           aria-expanded={isMenuOpen}
         >
           <span className="sr-only">Open menu</span>
-          <Image src={menuIcon} alt="Open menu" width={24} height={24} />
+          <Image src="/assets/icons/menu.svg" alt="Open menu" width={24} height={24} />
         </button>
         <div className={`${isMenuOpen ? 'block' : 'hidden'} w-full md:block md:w-auto`} id="navbar-menu">
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
@@ -111,12 +108,12 @@ export default function Navbar() {
             </li>
             <li>
               <Link href={getLocalizedPath('fr')} locale="fr" className={getFlagClassName()}>
-                <Image src={frIcon} alt="Switch to FR" width={24} height={24} />
+                <Image src="/assets/icons/flags/fr.svg" alt="Switch to FR" width={24} height={24} />
               </Link>
             </li>
             <li>
               <Link href={getLocalizedPath('en')} locale="en" className={getFlagClassName()}>
-                <Image src={gbIcon} alt="Switch to EN" width={24} height={24} />
+                <Image src="/assets/icons/flags/gb.svg" alt="Switch to EN" width={24} height={24} />
               </Link>
             </li>
           </ul>
