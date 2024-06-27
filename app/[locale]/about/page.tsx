@@ -5,6 +5,16 @@ import { useTranslations } from 'next-intl'
 
 interface IExperience {
   year: string
+  experience: ICertification | IProfession
+}
+
+interface ICertification {
+  title: string;
+  description: string;
+  link: string;
+}
+
+interface IProfession {
   company: ICompany
   role: string
   jobs: IJob[]
@@ -23,80 +33,98 @@ interface IJob {
 export default function About() {
   const translations = useTranslations('About')
 
+  const isProfessionalExperience = (experience: ICertification | IProfession): experience is IProfession => 'company' in experience && 'role' in experience
+
   const experiences: IExperience[] = [
     {
-      year: '2022 - 2023',
-      company: {
-        title: 'TKT Thinking Technology',
-        description: translations('companies.tkt.description')
+      year: '2024',
+      experience: {
+        title: translations('certifications.psm1.title'),
+        description: translations('certifications.psm1.description'),
+        link: 'https://www.scrum.org/user/1439045'
       },
-      role: translations('roles.lead'),
-      jobs: [
-        {
-          description: translations('companies.tkt.jobs.development'),
-          technology: "Symfony 6, React.JS, Flutter"
+    },
+    {
+      year: '2022 - 2023',
+      experience: {
+        company: {
+          title: 'TKT Thinking Technology',
+          description: translations('companies.tkt.description')
         },
-        {
-          description: translations('companies.tkt.jobs.supervision')
-        },
-        {
-          description: translations('companies.tkt.jobs.estimation')
-        },
-        {
-          description: translations('companies.tkt.jobs.trainerMore')
-        },
-        {
-          description: translations('companies.tkt.jobs.tutor')
-        },
-      ]
+        role: translations('roles.lead'),
+        jobs: [
+          {
+            description: translations('companies.tkt.jobs.development'),
+            technology: "Symfony 6, React.JS, Flutter"
+          },
+          {
+            description: translations('companies.tkt.jobs.supervision')
+          },
+          {
+            description: translations('companies.tkt.jobs.estimation')
+          },
+          {
+            description: translations('companies.tkt.jobs.trainerMore')
+          },
+          {
+            description: translations('companies.tkt.jobs.tutor')
+          },
+        ]
+      }
     },
     {
       year: '2019 - 2022',
-      company: {
-        title: 'TKT Thinking Technology'
-      },
-      role: translations('roles.fullstack'),
-      jobs: [
-        {
-          description: translations('companies.tkt.jobs.development'),
-          technology: 'Symfony 4,5,6, React.JS, Nest.JS'
+      experience: {
+        company: {
+          title: 'TKT Thinking Technology'
         },
-      ]
+        role: translations('roles.fullstack'),
+        jobs: [
+          {
+            description: translations('companies.tkt.jobs.development'),
+            technology: 'Symfony 4,5,6, React.JS, Nest.JS'
+          },
+        ]
+      }
     },
     {
       year: '2018 - 2019',
-      company: {
-        title: 'TKT Thinking Technology'
-      },
-      role: translations('roles.training'),
-      jobs: [
-        {
-          description: translations('companies.tkt.jobs.development'),
-          technology: 'Symfony 4, React.JS, React Native'
-        }
-      ]
+      experience: {
+        company: {
+          title: 'TKT Thinking Technology'
+        },
+        role: translations('roles.training'),
+        jobs: [
+          {
+            description: translations('companies.tkt.jobs.development'),
+            technology: 'Symfony 4, React.JS, React Native'
+          }
+        ]
+      }
     },
     {
       year: '2016 - 2018',
-      company: {
-        title: 'Au Pas de Courses',
-        description: translations('companies.apdc.description')
-      },
-      role: translations('roles.training'),
-      jobs: [
-        {
-          description: translations('companies.apdc.jobs.website'),
-          technology: 'Magento 1'
+      experience: {
+        company: {
+          title: 'Au Pas de Courses',
+          description: translations('companies.apdc.description')
         },
-        {
-          description: translations('companies.apdc.jobs.bo'),
-          technology: 'Symfony 3'
-        },
-        {
-          description: translations('companies.apdc.jobs.application'),
-          technology: 'React.JS'
-        }
-      ]
+        role: translations('roles.training'),
+        jobs: [
+          {
+            description: translations('companies.apdc.jobs.website'),
+            technology: 'Magento 1'
+          },
+          {
+            description: translations('companies.apdc.jobs.bo'),
+            technology: 'Symfony 3'
+          },
+          {
+            description: translations('companies.apdc.jobs.application'),
+            technology: 'React.JS'
+          }
+        ]
+      }
     },
   ]
 
@@ -116,30 +144,44 @@ export default function About() {
       </a>
       <div className="flex flex-col items-start relative">
         <div className="absolute left-28 top-0 bottom-0 w-0.5 bg-cyan-700"></div>
-        {experiences.map((experience: IExperience, index: number) => (
+        {experiences.map((exp: IExperience, index: number) => (
           <div key={index} className="flex items-start mb-10">
-            <div className="w-24 mr-4 text-cyan-700 text-right">{experience.year}</div>
+            <div className="w-24 mr-4 text-cyan-700 text-right">{exp.year}</div>
             <div className="relative flex items-center">
               <div className="absolute -left-3 top-1/2 -translate-y-[calc(50%-26px)] bg-white border-2 border-cyan-700 rounded-full w-6 h-6"></div>
             </div>
-            <div className="pl-8 text-left">
-              <h3 className="text-2xl font-semibold">{experience.role}</h3>
-              <p className='mb-6 text-xl'>
-                {experience.company.title}
-                {experience.company.description && ' - '}
-                {experience.company.description && (
-                  <span className='text-sm'>{experience.company.description}</span>
-                )}
-              </p>
-              <ul>
-                {experience.jobs.map((job: IJob, index: number) => (
-                  <li key={index} className='mb-2 list-disc'>
-                    {job.description}
-                    {job.technology && <span className='block text-sm text-gray-500'>{job.technology}</span>}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            {isProfessionalExperience(exp.experience) ? (
+              <div className="pl-8 text-left">
+                <h3 className="text-2xl font-semibold">{exp.experience.role}</h3>
+                <p className='mb-6 text-xl'>
+                  {exp.experience.company.title}
+                  {exp.experience.company.description && ' - '}
+                  {exp.experience.company.description && (
+                    <span className='text-sm'>{exp.experience.company.description}</span>
+                  )}
+                </p>
+                <ul>
+                  {exp.experience.jobs.map((job: IJob, index: number) => (
+                    <li key={index} className='mb-2 list-disc'>
+                      {job.description}
+                      {job.technology && <span className='block text-sm text-gray-500'>{job.technology}</span>}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : (
+              <div className="pl-8 text-left">
+                <h3 className="text-2xl font-semibold">{exp.experience.title}</h3>
+                <p className='mb-6 text-xl'>
+                  {exp.experience.description}
+                  <span className='block text-sm text-gray-500 hover:text-cyan-800'>
+                    {' ( '}
+                    <a href={exp.experience.link} target="_blank">{translations('certifications.seeMore')}</a>
+                    {' ) '}
+                  </span>
+                </p>
+              </div>
+            )}
           </div>
         ))}
       </div>

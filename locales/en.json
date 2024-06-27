@@ -41,6 +41,13 @@
           "application": "Application development"
         }
       }
+    },
+    "certifications": {
+      "seeMore": "See more",
+      "psm1": {
+        "title": "Scrum Master certification",
+        "description": "PSM I certification"
+      }
     }
   },
   "Projects": {
