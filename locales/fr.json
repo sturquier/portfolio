@@ -54,6 +54,7 @@
     "title": "Projets",
     "subtitle": "Liste des projets auxquels j'ai contribué",
     "descriptions": {
+      "cocacolarefillable": "Plateforme de recherche de points de collecte pour le recyclage des bouteilles en verre",
       "theones": "Application mobile destinée à la vente de produits de luxe",
       "luckysit": "Application mobile permettant de jouer à divers jeux interactifs pendant les temps d'attente dans les stades lors d'évènements",
       "otello": "Plateforme de mise en relation entre organismes administratifs et hôtels afin de placer des personnes isolées en rupture d'hébergement",
