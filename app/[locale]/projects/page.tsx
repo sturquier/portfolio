@@ -15,6 +15,12 @@ export default function Projects() {
 
   const projects: IProject[] = [
     {
+      title: 'Episciences',
+      description: translations('descriptions.episciences'),
+      image: '/assets/images/projects/episciences.png',
+      padding: 'px-4',
+    },
+    {
       title: 'Coca-Cola Refillable',
       description: translations('descriptions.cocacolarefillable'),
       image: '/assets/images/projects/coca-cola-refillable.png',
