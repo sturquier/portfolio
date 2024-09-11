@@ -45,7 +45,7 @@ export default function About() {
       },
     },
     {
-      year: '2022 - 2023',
+      year: '2022 - 2024',
       experience: {
         company: {
           title: 'TKT Thinking Technology',
@@ -162,7 +162,7 @@ export default function About() {
                 </p>
                 <ul>
                   {exp.experience.jobs.map((job: IJob, index: number) => (
-                    <li key={index} className='mb-2 list-disc'>
+                    <li key={index} className='mb-2 list-none md:list-disc'>
                       {job.description}
                       {job.technology && <span className='block text-sm text-gray-500'>{job.technology}</span>}
                     </li>
