@@ -4,6 +4,16 @@
   background-color: var(--icon-color, #000000);
   transition: background-color 0.3s;
 
+  &-github {
+    width: 24px;
+    height: 24px;
+  }
+
+  &-linkedin {
+    width: 34px;
+    height: 34px;
+  }
+
   .footer-link:hover & {
     background-color: var(--icon-hover-color, #0e7490);
   }

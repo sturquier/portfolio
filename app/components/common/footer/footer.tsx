@@ -13,14 +13,14 @@ export default function Footer() {
         <div className="flex items-center space-x-4 mb-2">
           <Link href={process.env.GITHUB_URL ?? ''} className={linkClassName} target="_blank" rel="noopener noreferrer">
             <span className="sr-only">GitHub</span>
-            <div className="footer-icon footer-icon-github" style={{ width: 24, height: 24, WebkitMaskImage: `url(${githubIcon.src})`, maskImage: `url(${githubIcon.src})` }}></div>
+            <div className="footer-icon footer-icon-github" style={{ WebkitMaskImage: `url(${githubIcon.src})`, maskImage: `url(${githubIcon.src})` }}></div>
           </Link>
           <Link href={process.env.LINKEDIN_URL ?? ''} className={linkClassName} target="_blank" rel="noopener noreferrer">
             <span className="sr-only">LinkedIn</span>
-            <div className="footer-icon footer-icon-linkedin" style={{ width: 34, height: 34, WebkitMaskImage: `url(${linkedinIcon.src})`, maskImage: `url(${linkedinIcon.src})` }}></div>
+            <div className="footer-icon footer-icon-linkedin" style={{ WebkitMaskImage: `url(${linkedinIcon.src})`, maskImage: `url(${linkedinIcon.src})` }}></div>
           </Link>
         </div>
-        <p className="text-gray-800 dark:text-gray-400 text-sm text-center">© Simon Turquier 2023</p>
+        <p className="text-gray-800 dark:text-gray-400 text-sm text-center">© Simon Turquier 2024</p>
       </div>
     </footer>
   )
