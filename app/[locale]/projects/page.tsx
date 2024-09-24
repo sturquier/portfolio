@@ -51,6 +51,13 @@ export default function Projects() {
       padding: 'px-4',
     },
     {
+      title: translations('projects.leasup.title'),
+      description: translations('projects.leasup.description'),
+      stack: translations('projects.leasup.stack'),
+      image: '/assets/images/projects/leasup.png',
+      padding: 'px-4',
+    },
+    {
       title: translations('projects.eatsalad.title'),
       description: translations('projects.eatsalad.description'),
       stack: translations('projects.eatsalad.stack'),

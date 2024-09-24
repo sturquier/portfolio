@@ -86,6 +86,11 @@
         "description": "Plateforme de mise en relation entre organismes administratifs et hôtels afin de placer des personnes isolées en rupture d'hébergement",
         "stack": "Symfony / React.JS"
       },
+      "leasup": {
+        "title": "Leasup",
+        "description": "Plateforme de gestion de baux commerciaux",
+        "stack": "Nest.JS / React.JS"
+      },
       "eatsalad": {
         "title": "Eat Salad",
         "description": "Plateforme permettant de composer, commander et se faire livrer des salades sur mesure",
