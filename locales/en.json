@@ -24,18 +24,27 @@
     "companies": {
       "outplay": {
         "title": "Outplay.team",
-        "description": "Web agency"
+        "description": "Web agency",
+        "jobs": {
+          "estimation": "Estimating and allocating time and cost",
+          "clients": "Discussions with various clients ( pre-sales, kick-offs, reviews, ... )",
+          "development": "Development and deployment of various projects"
+        },
+        "stack": "Tech stack : React.JS, Nest.JS, Firebase ..."
       },
       "tkt": {
         "title": "TKT Thinking Technology",
         "description": "Web agency",
         "jobs": {
           "supervision": "Team supervision and assurance of technical quality of deliverables",
-          "estimation": "Estimate time and cost",
-          "trainer": "Delivering in-house training",
-          "trainerMore": "Delivering in-house training and working as a trainer in a school",
-          "tutor": "Recruitments, jobs dating. Tutor for a work-linked student",
-          "development": "Back, front and mobile development"
+          "estimation": "Estimating and allocating time and cost",
+          "trainer": "Delivering in-house training and working as a trainer",
+          "tutor": "Recruitments, jobs dating, tutor for a work-linked student",
+          "development": "Development and deployment of various projects"
+        },
+        "stacks": {
+          "lead": "Tech stack : Symfony, React.JS, Nest.JS, Flutter, AWS, Docker, MongoDB, Github Actions, Firebase ...",
+          "fullstack": "Tech stack : Symfony, React.JS, React Native, Angular, Django Rest Framework, ElasticSearch, Docker, ..."
         }
       },
       "apdc": {

@@ -24,18 +24,27 @@
     "companies": {
       "outplay": {
         "title": "Outplay.team",
-        "description": "Agence web"
+        "description": "Agence web",
+        "jobs": {
+          "estimation": "Estimation et répartition du temps et des coûts",
+          "clients": "Echange avec les différents clients ( avant-vente, kick-off, reviews, ... )",
+          "development": "Développement et déploiement des différents projets"
+        },
+        "stack": "Stack technique : React.JS, Nest.JS, Firebase ..."
       },
       "tkt": {
         "title": "TKT Thinking Technology",
         "description": "Agence web",
         "jobs": {
-          "supervision": "Supervision d'équipe et garantie de la qualité technique des livrables",
-          "estimation": "Estimation du temps et des coûts",
-          "trainer": "Conduite de formations internes",
-          "trainerMore": "Conduite de formations internes et intervention en tant que formateur dans une école",
-          "tutor": "Recrutements, jobs dating. Tuteur d'un alternant",
-          "development": "Développement back, front et mobile"
+          "supervision": "Supervision et suivi technique des projets et maintien de la qualité des livrables",
+          "estimation": "Estimation et répartition du temps et des coûts",
+          "trainer": "Conduite de formations internes et interventions en tant que formateur",
+          "tutor": "Recrutements, jobs dating, tuteur d'un alternant",
+          "development": "Développement et déploiement des différents projets"
+        },
+        "stacks": {
+          "lead": "Stack technique : Symfony, React.JS, Nest.JS, Flutter, AWS, Docker, MongoDB, Github Actions, Firebase ...",
+          "fullstack": "Stack technique : Symfony, React.JS, React Native, Angular, Django Rest Framework, ElasticSearch, Docker, ..."
         }
       },
       "apdc": {

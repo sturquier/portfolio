@@ -39,11 +39,13 @@ export default function About() {
           title: translations('companies.outplay.title'),
           description: translations('companies.outplay.description')
         },
-        role: 'ii',
+        role: translations('roles.cofounder'),
         jobs: [
-          'ee',
+          translations('companies.outplay.jobs.estimation'),
+          translations('companies.outplay.jobs.clients'),
+          translations('companies.outplay.jobs.development'),
         ],
-        stack: 'AAA'
+        stack: translations('companies.outplay.stack')
       },
     },
     {
@@ -63,13 +65,12 @@ export default function About() {
         },
         role: translations('roles.lead'),
         jobs: [ 
-          translations('companies.tkt.jobs.development'),
           translations('companies.tkt.jobs.supervision'),
           translations('companies.tkt.jobs.estimation'),
-          translations('companies.tkt.jobs.trainerMore'),
-          translations('companies.tkt.jobs.tutor')
+          translations('companies.tkt.jobs.tutor'),
+          translations('companies.tkt.jobs.development')
         ],
-        stack: 'Symfony 6, React.JS, Flutter'
+        stack: translations('companies.tkt.stacks.lead')
       }
     },
     {
@@ -80,17 +81,17 @@ export default function About() {
         },
         role: translations('roles.fullstack'),
         jobs: [
+          translations('companies.tkt.jobs.trainer'),
           translations('companies.tkt.jobs.development'),
         ],
-        stack: 'Symfony 4,5,6, React.JS, Nest.JS'
-        // technology: 'Symfony 4, React.JS, React Native''
+        stack: translations('companies.tkt.stacks.fullstack')
       }
     },
     {
       year: '2016 - 2018',
       experience: {
         company: {
-          title: ('companies.apdc.title'),
+          title: translations('companies.apdc.title'),
           description: translations('companies.apdc.description')
         },
         role: translations('roles.fullstack'),
