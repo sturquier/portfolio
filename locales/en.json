@@ -17,12 +17,17 @@
     "title": "About",
     "cv": "CV",
     "roles": {
-      "lead": "Lead web developer",
-      "fullstack": "Full stack developer",
-      "training": "Web developer ( work-linked training )"
+      "cofounder": "Co-founder / CTO",
+      "lead": "Lead developer",
+      "fullstack": "Full stack developer"
     },
     "companies": {
+      "outplay": {
+        "title": "Outplay.team",
+        "description": "Web agency"
+      },
       "tkt": {
+        "title": "TKT Thinking Technology",
         "description": "Web agency",
         "jobs": {
           "supervision": "Team supervision and assurance of technical quality of deliverables",
@@ -34,12 +39,14 @@
         }
       },
       "apdc": {
+        "title": "Au Pas de Courses",
         "description": "Ordering platform and home delivery",
         "jobs": {
           "website": "Showcase site development",
           "bo": "Back-Office development",
           "application": "Application development"
-        }
+        },
+        "stack": "Tech stack : Magento, Symfony, React.JS"
       }
     },
     "certifications": {
@@ -53,18 +60,62 @@
   "Projects": {
     "title": "Projects",
     "subtitle": "List of projects I have contributed to",
-    "descriptions": {
-      "episciences": "Publishing platform for scientific journals",
-      "cocacolarefillable": "Search platform for collection points for glass bottle recycling",
-      "theones": "Mobile application for the sale of luxury products",
-      "luckysit": "Mobile application that allows users to play a variety of interactive games while waiting in stadiums during events",
-      "otello": "Platform that puts administrative bodies and hotels in touch with each other in order to place single people who have run out of accommodation.",
-      "eatsalad": "Platform for composing, ordering and delivering customised salads",
-      "chronicoach": "Mobile application that provides nutritional support for people with chronic diseases",
-      "exval": "Real estate transaction research and analysis platform",
-      "tradelock": "Platform that allows companies to insure their invoices",
-      "hardwareclub": "Community platform to find funding and partnerships",
-      "treasurehunters": "Mobile game that lets you search for treasure in AR through quests and objects."
+    "projects": {
+      "episciences": {
+        "title": "Episciences",
+        "description": "Publishing platform for scientific journals",
+        "stack": "Symfony / React.JS"
+      },
+      "cocacolarefillable": {
+        "title": "Coca-Cola Refillable",
+        "description": "Search platform for collection points for glass bottle recycling",
+        "stack": "Nest.JS / React.JS"
+      },
+      "theones": {
+        "title": "The Ones",
+        "description": "Mobile application for the sale of luxury products",
+        "stack": "Sylius / Flutter"
+      },
+      "luckysit": {
+        "title": "Luckysit",
+        "description": "Mobile application that allows users to play a variety of interactive games while waiting in stadiums during events",
+        "stack": "Nest.JS / Ionic React"
+      },
+      "otello": {
+        "title": "Otello",
+        "description": "Platform that puts administrative bodies and hotels in touch with each other in order to place single people who have run out of accommodation.",
+        "stack": "Symfony / React.JS"
+      },
+      "eatsalad": {
+        "title": "Eat Salad",
+        "description": "Platform for composing, ordering and delivering customised salads",
+        "stack": "Symfony / React.JS"
+      },
+      "chronicoach": {
+        "title": "Chronicoach",
+        "description": "Mobile application that provides nutritional support for people with chronic diseases",
+        "stack": "Symfony / Ionic"
+      },
+      "exval": {
+        "title": "Exval",
+        "description": "Real estate transaction research and analysis platform",
+        "stack": "Symfony / Vue.JS"
+      },
+      "tradelock": {
+        "title": "Tradelock",
+        "description": "Platform that allows companies to insure their invoices",
+        "stack": "Django Rest Framework / React.JS"
+      },
+      "hardwareclub": {
+        "title": "Hardware Club",
+        "description": "Community platform to find funding and partnerships",
+        "stack": "Symfony / Angular"
+      },
+      "treasurehunters": {
+        "title": "Treasure Hunters",
+        "description": "Mobile game that lets you search for treasure in AR through quests and objects.",
+        "stack": "Django Rest Framework / React Native"
+      }
     }
   },
   "Contact": {

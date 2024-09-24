@@ -17,12 +17,17 @@
     "title": "À propos",
     "cv": "CV",
     "roles": {
-      "lead": "Développeur web ( lead )",
-      "fullstack": "Développeur web full stack",
-      "training": "Développeur web ( en alternance )"
+      "cofounder": "Co-fondateur / CTO",
+      "lead": "Lead développeur",
+      "fullstack": "Développeur full stack"
     },
     "companies": {
+      "outplay": {
+        "title": "Outplay.team",
+        "description": "Agence web"
+      },
       "tkt": {
+        "title": "TKT Thinking Technology",
         "description": "Agence web",
         "jobs": {
           "supervision": "Supervision d'équipe et garantie de la qualité technique des livrables",
@@ -34,12 +39,14 @@
         }
       },
       "apdc": {
+        "title": "Au Pas de Courses",
         "description": "Plateforme de commande et livraison à domicile",
         "jobs": {
           "website": "Développement du site vitrine",
           "bo": "Développement du Back-Office",
           "application": "Développement de l'application"
-        }
+        },
+        "stack": "Stack technique : Magento, Symfony, React.JS"
       }
     },
     "certifications": {
@@ -53,18 +60,62 @@
   "Projects": {
     "title": "Projets",
     "subtitle": "Liste des projets auxquels j'ai contribué",
-    "descriptions": {
-      "episciences": "Plateforme de publication de revues scientifiques",
-      "cocacolarefillable": "Plateforme de recherche de points de collecte pour le recyclage des bouteilles en verre",
-      "theones": "Application mobile destinée à la vente de produits de luxe",
-      "luckysit": "Application mobile permettant de jouer à divers jeux interactifs pendant les temps d'attente dans les stades lors d'évènements",
-      "otello": "Plateforme de mise en relation entre organismes administratifs et hôtels afin de placer des personnes isolées en rupture d'hébergement",
-      "eatsalad": "Plateforme permettant de composer, commander et se faire livrer des salades sur mesure",
-      "chronicoach": "Application mobile destinée à l'accompagnement nutritionnel des personnes souffrants de maladies chroniques",
-      "exval": "Plateforme de recherche et analyse de transactions immobilières",
-      "tradelock": "Plateforme permettant aux sociétés d'assurer leurs factures",
-      "hardwareclub": "Plateforme communautaire permettant de trouver des fonds et des partenariats",
-      "treasurehunters": "Jeu mobile permettant de partir à la chasse aux trésors en AR via des quêtes et des objets"
+    "projects": {
+      "episciences": {
+        "title": "Episciences",
+        "description": "Plateforme de publication de revues scientifiques",
+        "stack": "Symfony / React.JS"
+      },
+      "cocacolarefillable": {
+        "title": "Coca-Cola Refillable",
+        "description": "Plateforme de recherche de points de collecte pour le recyclage des bouteilles en verre",
+        "stack": "Nest.JS / React.JS"
+      },
+      "theones": {
+        "title": "The Ones",
+        "description": "Application mobile destinée à la vente de produits de luxe",
+        "stack": "Sylius / Flutter"
+      },
+      "luckysit": {
+        "title": "Luckysit",
+        "description": "Application mobile permettant de jouer à divers jeux interactifs pendant les temps d'attente dans les stades lors d'évènements",
+        "stack": "Nest.JS / Ionic React"
+      },
+      "otello": {
+        "title": "Otello",
+        "description": "Plateforme de mise en relation entre organismes administratifs et hôtels afin de placer des personnes isolées en rupture d'hébergement",
+        "stack": "Symfony / React.JS"
+      },
+      "eatsalad": {
+        "title": "Eat Salad",
+        "description": "Plateforme permettant de composer, commander et se faire livrer des salades sur mesure",
+        "stack": "Symfony / React.JS"
+      },
+      "chronicoach": {
+        "title": "Chronicoach",
+        "description": "Application mobile destinée à l'accompagnement nutritionnel des personnes souffrants de maladies chroniques",
+        "stack": "Symfony / Ionic"
+      },
+      "exval": {
+        "title": "Exval",
+        "description": "Plateforme de recherche et analyse de transactions immobilières",
+        "stack": "Symfony / Vue.JS"
+      },
+      "tradelock": {
+        "title": "Tradelock",
+        "description": "Plateforme permettant aux sociétés d'assurer leurs factures",
+        "stack": "Django Rest Framework / React.JS"
+      },
+      "hardwareclub": {
+        "title": "Hardware Club",
+        "description": "Plateforme communautaire permettant de trouver des fonds et des partenariats",
+        "stack": "Symfony / Angular"
+      },
+      "treasurehunters": {
+        "title": "Treasure Hunters",
+        "description": "Jeu mobile permettant de partir à la chasse aux trésors en AR via des quêtes et des objets",
+        "stack": "Django Rest Framework / React Native"
+      }
     }
   },
   "Contact": {

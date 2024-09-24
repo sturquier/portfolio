@@ -17,17 +17,13 @@ interface ICertification {
 interface IProfession {
   company: ICompany
   role: string
-  jobs: IJob[]
+  jobs: string[]
+  stack: string
 }
 
 interface ICompany {
   title: string
   description?: string
-}
-
-interface IJob {
-  description: string
-  technology?: string
 }
 
 export default function About() {
@@ -39,91 +35,71 @@ export default function About() {
     {
       year: '2024',
       experience: {
+        company: {
+          title: translations('companies.outplay.title'),
+          description: translations('companies.outplay.description')
+        },
+        role: 'ii',
+        jobs: [
+          'ee',
+        ],
+        stack: 'AAA'
+      },
+    },
+    {
+      year: '2024',
+      experience: {
         title: translations('certifications.psm1.title'),
         description: translations('certifications.psm1.description'),
         link: 'https://www.scrum.org/user/1439045'
       },
     },
     {
-      year: '2022 - 2024',
+      year: '2022 - 2023',
       experience: {
         company: {
-          title: 'TKT Thinking Technology',
+          title: translations('companies.tkt.title'),
           description: translations('companies.tkt.description')
         },
         role: translations('roles.lead'),
-        jobs: [
-          {
-            description: translations('companies.tkt.jobs.development'),
-            technology: "Symfony 6, React.JS, Flutter"
-          },
-          {
-            description: translations('companies.tkt.jobs.supervision')
-          },
-          {
-            description: translations('companies.tkt.jobs.estimation')
-          },
-          {
-            description: translations('companies.tkt.jobs.trainerMore')
-          },
-          {
-            description: translations('companies.tkt.jobs.tutor')
-          },
-        ]
+        jobs: [ 
+          translations('companies.tkt.jobs.development'),
+          translations('companies.tkt.jobs.supervision'),
+          translations('companies.tkt.jobs.estimation'),
+          translations('companies.tkt.jobs.trainerMore'),
+          translations('companies.tkt.jobs.tutor')
+        ],
+        stack: 'Symfony 6, React.JS, Flutter'
       }
     },
     {
-      year: '2019 - 2022',
+      year: '2018 - 2022',
       experience: {
         company: {
-          title: 'TKT Thinking Technology'
+          title: translations('companies.tkt.title'),
         },
         role: translations('roles.fullstack'),
         jobs: [
-          {
-            description: translations('companies.tkt.jobs.development'),
-            technology: 'Symfony 4,5,6, React.JS, Nest.JS'
-          },
-        ]
-      }
-    },
-    {
-      year: '2018 - 2019',
-      experience: {
-        company: {
-          title: 'TKT Thinking Technology'
-        },
-        role: translations('roles.training'),
-        jobs: [
-          {
-            description: translations('companies.tkt.jobs.development'),
-            technology: 'Symfony 4, React.JS, React Native'
-          }
-        ]
+          translations('companies.tkt.jobs.development'),
+        ],
+        stack: 'Symfony 4,5,6, React.JS, Nest.JS'
+        // technology: 'Symfony 4, React.JS, React Native''
       }
     },
     {
       year: '2016 - 2018',
       experience: {
         company: {
-          title: 'Au Pas de Courses',
+          title: ('companies.apdc.title'),
           description: translations('companies.apdc.description')
         },
-        role: translations('roles.training'),
+        role: translations('roles.fullstack'),
         jobs: [
-          {
-            description: translations('companies.apdc.jobs.website'),
-            technology: 'Magento 1'
-          },
-          {
-            description: translations('companies.apdc.jobs.bo'),
-            technology: 'Symfony 3'
-          },
-          {
-            description: translations('companies.apdc.jobs.application'),
-            technology: 'React.JS'
-          }
-        ]
+          translations('companies.apdc.jobs.website'),
+          translations('companies.apdc.jobs.bo'),
+          translations('companies.apdc.jobs.application'),
+        ],
+        stack: translations('companies.apdc.stack'),
       }
     },
   ]
@@ -161,13 +137,11 @@ export default function About() {
                   )}
                 </p>
                 <ul>
-                  {exp.experience.jobs.map((job: IJob, index: number) => (
-                    <li key={index} className='mb-2 list-none md:list-disc'>
-                      {job.description}
-                      {job.technology && <span className='block text-sm text-gray-500'>{job.technology}</span>}
-                    </li>
+                  {exp.experience.jobs.map((job: string, index: number) => (
+                    <li key={index} className='mb-2 list-none md:list-disc'>{job}</li>
                   ))}
                 </ul>
+                <p className='block text-sm text-gray-500'>{exp.experience.stack}</p>
               </div>
             ) : (
               <div className="pl-8 text-left">

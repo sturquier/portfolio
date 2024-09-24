@@ -6,6 +6,7 @@ import { useTranslations } from 'next-intl'
 interface IProject {
   title: string
   description: string
+  stack: string
   image: string
   padding: string
 }
@@ -15,68 +16,79 @@ export default function Projects() {
 
   const projects: IProject[] = [
     {
-      title: 'Episciences',
-      description: translations('descriptions.episciences'),
+      title: translations('projects.episciences.title'),
+      description: translations('projects.episciences.description'),
+      stack: translations('projects.episciences.stack'),
       image: '/assets/images/projects/episciences.png',
       padding: 'px-4',
     },
     {
-      title: 'Coca-Cola Refillable',
-      description: translations('descriptions.cocacolarefillable'),
+      title: translations('projects.cocacolarefillable.title'),
+      description: translations('projects.cocacolarefillable.description'),
+      stack: translations('projects.cocacolarefillable.stack'),
       image: '/assets/images/projects/coca-cola-refillable.png',
       padding: 'px-4',
     },
     {
-      title: 'The Ones',
-      description: translations('descriptions.theones'),
+      title: translations('projects.theones.title'),
+      description: translations('projects.theones.description'),
+      stack: translations('projects.theones.stack'),
       image: '/assets/images/projects/the-ones.png',
       padding: 'py-4',
     },
     {
-      title: 'Luckysit',
-      description: translations('descriptions.luckysit'),
+      title: translations('projects.luckysit.title'),
+      description: translations('projects.luckysit.description'),
+      stack: translations('projects.luckysit.stack'),
       image: '/assets/images/projects/luckysit.png',
       padding: 'py-4',
     },
     {
-      title: 'Otello',
-      description: translations('descriptions.otello'),
+      title: translations('projects.otello.title'),
+      description: translations('projects.otello.description'),
+      stack: translations('projects.otello.stack'),
       image: '/assets/images/projects/otello.png',
       padding: 'px-4',
     },
     {
-      title: 'Eat Salad',
-      description: translations('descriptions.eatsalad'),
+      title: translations('projects.eatsalad.title'),
+      description: translations('projects.eatsalad.description'),
+      stack: translations('projects.eatsalad.stack'),
       image: '/assets/images/projects/eat-salad.png',
       padding: 'px-4',
     },
     {
-      title: 'Chronicoach',
-      description: translations('descriptions.chronicoach'),
+      title: translations('projects.chronicoach.title'),
+      description: translations('projects.chronicoach.description'),
+      stack: translations('projects.chronicoach.stack'),
       image: '/assets/images/projects/chronicoach.png',
       padding: 'py-4',
     },
     {
-      title: 'Exval',
-      description: translations('descriptions.exval'),
+      title: translations('projects.exval.title'),
+      description: translations('projects.exval.description'),
+      stack: translations('projects.exval.stack'),
       image: '/assets/images/projects/exval.png',
       padding: 'px-4',
     },
     {
-      title: 'Tradelock',
-      description: translations('descriptions.tradelock'),
+      title: translations('projects.tradelock.title'),
+      description: translations('projects.tradelock.description'),
+      stack: translations('projects.tradelock.stack'),
       image: '/assets/images/projects/tradelock.png',
       padding: 'px-4',
     },
     {
-      title: 'Hardware Club',
-      description: translations('descriptions.hardwareclub'),
+      title: translations('projects.hardwareclub.title'),
+      description: translations('projects.hardwareclub.description'),
+      stack: translations('projects.hardwareclub.stack'),
       image: '/assets/images/projects/hardware-club.png',
       padding: 'px-4',
     },
     {
-      title: 'Treasure Hunters',
-      description: translations('descriptions.treasurehunters'),
+      title: translations('projects.treasurehunters.title'),
+      description: translations('projects.treasurehunters.description'),
+      stack: translations('projects.treasurehunters.stack'),
       image: '/assets/images/projects/treasure-hunters.png',
       padding: 'py-4',
     },
@@ -101,6 +113,7 @@ export default function Projects() {
               <div className="text-center">
                 <h2 className="text-xl font-semibold">{project.title}</h2>
                 <p className="mt-2">{project.description}</p>
+                <p className="mt-2 text-sm text-gray-500">{project.stack}</p>
               </div>
             </div>
           </div>
